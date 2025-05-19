@@ -1,0 +1,89 @@
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .watch-container {
+        flex-direction: column;
+    }
+    
+    .episode-list-sidebar {
+        flex: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-wrap: wrap;
+    }
+    
+    .logo {
+        order: 1;
+    }
+    
+    .mobile-menu {
+        display: block;
+        order: 2;
+    }
+    
+    nav {
+        order: 4;
+        width: 100%;
+        margin-top: 15px;
+        display: none;
+    }
+    
+    nav.active {
+        display: block;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        margin: 5px 0;
+    }
+    
+    .search-bar {
+        order: 3;
+        width: 100%;
+        margin-top: 15px;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .anime-details {
+        flex-direction: column;
+    }
+    
+    .anime-poster {
+        flex: 1;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .anime-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    
+    .characters-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+    
+    .episodes-list {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+    
+    .hero {
+        height: 300px;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
